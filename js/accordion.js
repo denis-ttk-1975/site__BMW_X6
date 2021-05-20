@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		featureLinkElems.forEach((butt, idx) => {
 			butt.addEventListener('click', () => {
+				activeCheck = butt.classList.contains('feature__link_active')
+				console.log(activeCheck)
+
 				featureSubElems.forEach((featureSubElem) => {
 					featureSubElem.classList.add('hidden')
 				})
@@ -22,9 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 					featureLinkElem.classList.remove('feature__link_active')
 				} )
 				
-				
+				if (!activeCheck) {
 				featureSubElems[idx].classList.remove('hidden');
 				butt.classList.add('feature__link_active')
+				}
 			})
 		})
 	
