@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	for (let i = 0; i < featureSubElems.length; i++) {
 		featureLinkElems[i].addEventListener('click', () => {
-			// console.log(i)
-			featureSubElems[i].classList.remove('')
+			console.log(i)
+			// featureSubElems[i].classList.remove('')
 		})
 		// console.log (featureLinkElems[i])
 	}
