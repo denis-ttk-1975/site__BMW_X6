@@ -46,7 +46,7 @@ const formHandler = (form) => {
 			(err) => {
 				smallElem.textContent = 'К сожалению технические неполадки, попробуйте отправить данные позже.';
 				smallElem.style.color = 'red';
-				form.append(smallElem);
+				
 			});
 
 			form.reset();
